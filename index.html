@@ -2,103 +2,205 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <title>Giunti in Oriente - Book Party</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Giunti in Oriente - Book Party a Ischia | 14 Maggio</title>
+
+  <meta name="description" content="Giunti in Oriente - Book Party a Ischia. Evento con libri, aperitivo, musica e beneficenza il 14 maggio alle ore 19:00 presso Oriente Hotel Terme.">
+  <meta name="keywords" content="Giunti in Oriente, Book Party Ischia, evento libri Ischia, Oriente Hotel Terme, Giunti al Punto Ischia, eventi Ischia maggio">
+  <meta name="author" content="Giunti in Oriente">
+
+  <meta property="og:title" content="Giunti in Oriente - Book Party a Ischia">
+  <meta property="og:description" content="Porta un libro e partecipa al Book Party il 14 maggio alle ore 19:00 all'Oriente Hotel Terme di Ischia.">
+  <meta property="og:image" content="manifesto.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="it_IT">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Giunti in Oriente - Book Party",
+    "startDate": "2026-05-14T19:00:00+02:00",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "location": {
+      "@type": "Place",
+      "name": "Oriente Hotel Terme",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Via delle Terme 5",
+        "addressLocality": "Ischia",
+        "addressCountry": "IT"
+      }
+    },
+    "description": "Book Party a Ischia con libri, aperitivo, musica, incontri e beneficenza.",
+    "organizer": {
+      "@type": "Organization",
+      "name": "Giunti in Oriente"
+    }
+  }
+  </script>
+
   <style>
     body {
       margin: 0;
-      font-family: Georgia, serif;
-      background: #fff4ec;
-      color: #0b2b55;
+      font-family: Georgia, 'Times New Roman', serif;
+      background: #fff1e6;
+      color: #0d2c54;
     }
 
-    header {
-      text-align: center;
-      padding: 60px 20px;
-      background: #fff0e5;
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      background:
+        radial-gradient(circle at top left, #ffcf9f, transparent 35%),
+        linear-gradient(135deg, #fff1e6 0%, #f7d4c1 100%);
+    }
+
+    .container {
+      max-width: 1100px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .poster img {
+      width: 100%;
+      border-radius: 28px;
+      box-shadow: 0 20px 45px rgba(0,0,0,0.25);
+    }
+
+    .content {
+      background: rgba(255,255,255,0.75);
+      padding: 40px;
+      border-radius: 28px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.12);
     }
 
     h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
+      font-size: 58px;
+      line-height: 1;
+      margin: 0;
+      color: #0d2c54;
     }
 
-    .highlight {
-      color: #e95b25;
+    .orange {
+      color: #ef6b2e;
+    }
+
+    .subtitle {
       font-size: 28px;
+      margin: 15px 0 25px;
+      color: #ef6b2e;
       font-weight: bold;
     }
 
-    section {
-      max-width: 900px;
-      margin: auto;
-      padding: 40px 20px;
-      text-align: center;
+    .info {
+      font-size: 21px;
+      line-height: 1.6;
+      margin: 20px 0;
     }
 
-    .card {
-      background: white;
-      padding: 30px;
-      margin: 20px 0;
-      border-radius: 18px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    .box {
+      background: #0d2c54;
+      color: white;
+      padding: 22px;
+      border-radius: 20px;
+      margin-top: 25px;
+      font-size: 20px;
     }
 
     .button {
       display: inline-block;
       margin-top: 25px;
-      background: #e95b25;
+      padding: 16px 28px;
+      background: #ef6b2e;
       color: white;
-      padding: 15px 25px;
       text-decoration: none;
-      border-radius: 30px;
+      border-radius: 40px;
       font-weight: bold;
+      font-size: 18px;
+    }
+
+    .button:hover {
+      background: #d9551d;
     }
 
     footer {
       text-align: center;
-      padding: 30px;
-      background: #0b2b55;
+      padding: 30px 20px;
+      background: #0d2c54;
       color: white;
+      font-size: 16px;
+    }
+
+    @media (max-width: 850px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 42px;
+        text-align: center;
+      }
+
+      .subtitle,
+      .info {
+        text-align: center;
+      }
+
+      .content {
+        padding: 28px;
+      }
+
+      .button {
+        display: block;
+        text-align: center;
+      }
     }
   </style>
 </head>
+
 <body>
 
-<header>
-  <h1>Giunti in Oriente</h1>
-  <div class="highlight">Book Party</div>
-  <p>Libri, incontri e brindisi: una serata da leggere.</p>
-</header>
+  <main class="hero">
+    <div class="container">
 
-<section>
-  <div class="card">
-    <h2>📅 Quando</h2>
-    <p><strong>14 maggio alle ore 19:00</strong></p>
-  </div>
+      <div class="poster">
+        <img src="manifesto.jpg" alt="Manifesto evento Giunti in Oriente Book Party a Ischia">
+      </div>
 
-  <div class="card">
-    <h2>📍 Dove</h2>
-    <p>Oriente Hotel Terme<br>Via delle Terme, 5 - Ischia</p>
-  </div>
+      <div class="content">
+        <h1>Giunti in <span class="orange">Oriente</span></h1>
+        <div class="subtitle">Book Party</div>
 
-  <div class="card">
-    <h2>📚 Porta con te un libro</h2>
-    <p>Condividi una storia che ami o lasciati sorprendere da nuove letture.</p>
-  </div>
+        <div class="info">
+          <strong>14 maggio · ore 19:00</strong><br>
+          Oriente Hotel Terme<br>
+          Via delle Terme 5, Ischia
+        </div>
 
-  <div class="card">
-    <h2>🥂 Cosa ti aspetta</h2>
-    <p>Libri, aperitivo, musica, idee, incontri e beneficenza.</p>
-  </div>
+        <div class="box">
+          📚 Porta con te un libro.<br>
+          Una serata tra letture, aperitivo, musica, incontri e beneficenza.
+        </div>
 
-  <a class="button" href="https://www.google.com/maps/search/?api=1&query=Oriente+Hotel+Terme+Via+delle+Terme+5+Ischia">
-    Apri la mappa
-  </a>
-</section>
+        <a class="button" href="https://www.google.com/maps/search/?api=1&query=Oriente+Hotel+Terme+Via+delle+Terme+5+Ischia" target="_blank">
+          Apri la mappa
+        </a>
+      </div>
 
-<footer>
-  In collaborazione con Giunti al Punto
-</footer>
+    </div>
+  </main>
+
+  <footer>
+    In collaborazione con Giunti al Punto · Ischia
+  </footer>
 
 </body>
 </html>
